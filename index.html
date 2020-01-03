@@ -7,15 +7,23 @@
 </head>
 
 <body>
-  <img src="images/profile.jpg" alt="Kumar Gaurav profile picture">
-  <h1>Kumar Gaurav</h1>
-  <p><em>Software Engineer, <strong>Adobe Systems</strong>.</em></p>
-  <!--
-  strong and em tags convey more meaning than b and i.
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
-  -->
-  <p>I graduated from <a href="https://www.nitrkl.ac.in/">NIT Rourkela</a> – Computer Science and Engineering department, class of 2013 and have been working in the IT industry since then. I love coding, youtube and coffee.</p>
+  <table cellspacing="20">
+    <tbody>
+      <tr>
+        <td><img src="images/profile.jpg" alt="Kumar Gaurav profile picture" height="50%"></td>
+        <td>
+          <h1>Kumar Gaurav</h1>
+          <p><em>Software Engineer, <strong>Adobe Systems</strong>.</em></p>
+          <!--
+        strong and em tags convey more meaning than b and i.
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+        -->
+          <p>I graduated from <a href="https://www.nitrkl.ac.in/">NIT Rourkela</a> – Computer Science and Engineering department, class of 2013 and have been working in the IT industry since then. I love coding, youtube and coffee.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <hr>
   <h3>Education</h3>
   <ul>
@@ -74,7 +82,8 @@
     </li>
   </ol>
   <h3>Work Experience</h3>
-  <table>
+  <table cellspacing="10">
+    <!-- Attribute "cellspacing" is not recommended. Should be replaced by CSS.-->
     <thead>
       <tr>
         <td>Dates</td>

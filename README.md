@@ -1,4 +1,4 @@
-# HTML Personal Site - Basic
+# Web Development
 
 ## Plugins for atom
 ### Recommended

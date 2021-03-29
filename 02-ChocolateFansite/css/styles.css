@@ -4,8 +4,8 @@ h1 {
   font-size: 50px;
 }
 
-img {
-  background-color: black;
+img:hover {
+  background-color: gold;
 }
 /****************************** CLASS SELECTORS ******************************/
 .chocolate {

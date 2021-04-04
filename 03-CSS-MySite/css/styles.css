@@ -61,3 +61,34 @@ h1 {
   display: inline-block;
   right: 200px;
 }
+.fixedContainer {
+  position: fixed;
+  height: 200px;
+}
+.container {
+  position: relative;
+}
+.redAbsolute {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+.blueAbsolute {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.yellowAbsolute {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

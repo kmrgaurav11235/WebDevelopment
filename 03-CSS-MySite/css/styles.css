@@ -14,18 +14,6 @@ h1 {
   background-color: red;
   height: 200px;
   width: 200px;
-  position: relative;
-  /*
-  1. Default is static, which is just the HTML flow.
-  2. By itself, position doesn't do anything. You also have to set left/right/top/bottom
-  */
-  /*left: 20px;*/ /* move from left to right by 20 px */
-
-  /*right: 200px;*/ /* move from right to left. The value is so high that it will move out of screen */
-
-  top: 50px; /* This will start to appear on top of the bottom container. This is because relative
-  positioning doesn't affects the display of other elements. They keep appearing as if other elements
-  are still in the "static" position.*/
 }
 .bottom-container {
   background-color: blue;
@@ -34,61 +22,4 @@ h1 {
 }
 .pro {
   text-decoration: underline;
-  width: 100px; /* Useless as this is inline element */
-}
-
-.red {
-  height: 200px;
-  width: 200px;
-  background-color: red;
-  position: relative;
-  display: inline-block;
-  left: 400px;
-}
-.blue {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  position: relative;
-  display: inline-block;
-  right: 200px;
-}
-.yellow {
-  height: 200px;
-  width: 200px;
-  background-color: yellow;
-  position: relative;
-  display: inline-block;
-  right: 200px;
-}
-.fixedContainer {
-  position: fixed;
-  height: 200px;
-}
-.container {
-  position: relative;
-}
-.redAbsolute {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  position: absolute;
-  left: 200px;
-  top: 200px;
-}
-.blueAbsolute {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  position: absolute;
-  left: 100px;
-  top: 100px;
-}
-.yellowAbsolute {
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
-  position: absolute;
-  left: 0;
-  top: 0;
 }

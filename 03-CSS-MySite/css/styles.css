@@ -1,11 +1,18 @@
 body {
   margin: 0;
+  text-align: center;
+  /*
+  Block elements can be centered easily using this property.
+  If we use this inside parent, it will be applied to all children.
+  */
 }
 div {
   background-color: #E4F9F5;
 }
 h1 {
   margin-top: 0;
+  width: 30px; /* Making this element inline */
+  margin: 0 auto 0 auto; /* For inline elements, we have to se margin to auto to center them. */
 }
 .top-container {
   background-color: #E4F9F5;

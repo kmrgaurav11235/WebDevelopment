@@ -58,3 +58,22 @@ a {
   left: 300px;
   border: 300px;
 }
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.profile-image {
+  width: 15%;
+}
+
+.computer-image {
+  width: 25%;
+}
+
+.book-image {
+  width: 25%;
+}

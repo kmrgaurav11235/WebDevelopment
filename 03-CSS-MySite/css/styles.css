@@ -72,8 +72,16 @@ a {
 
 .computer-image {
   width: 25%;
+  float: left;
+  margin-right: 30px;
 }
 
 .book-image {
   width: 25%;
+  float: right;
+  margin-right: 30px;
 }
+/*
+.code-skill-description {
+  clear: both;
+}*/

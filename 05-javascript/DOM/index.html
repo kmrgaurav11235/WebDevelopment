@@ -7,9 +7,9 @@
   </head>
   <body>
     <h1>Hello</h1>
-    <!-- Internal Javascript-->
-    <script type="text/javascript">
-      alert("Hello");
-    </script>
+    <!--
+    External Javascript: Here we have to worry about the placement of script. We generally want to place it at bottom
+    just before the end of "body" to avoid a scenario where we are accessing an HTML element that has not been created yet.-->
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>

@@ -35,3 +35,8 @@ console.log(document.querySelector("#list .item"))
 
 // If you want all elements that match, querySelectorAll can be used -- returns an array.
 console.log(document.querySelectorAll("#list .item"))
+
+// Styling with DOM Style objects is a little different from CSS. We use camel case instead of kebab case. Also the values have to be String.
+// https://www.w3schools.com/jsref/dom_obj_style.asp
+document.querySelector("h1").style.fontSize = "10rem";
+document.querySelector("button").style.backgroundColor = "yellow";

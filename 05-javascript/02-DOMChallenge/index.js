@@ -40,3 +40,9 @@ console.log(document.querySelectorAll("#list .item"))
 // https://www.w3schools.com/jsref/dom_obj_style.asp
 document.querySelector("h1").style.fontSize = "10rem";
 document.querySelector("button").style.backgroundColor = "yellow";
+
+// It is not a good idea to apply styles using javascript. We should a separation of concerns between html, css and js.
+// Better is to define class in css file and apply that class to html elements using js.
+document.querySelector("li").classList.add("invisible");
+document.querySelector("h1").classList.remove("title");
+document.querySelector("a").classList.toggle("huge");

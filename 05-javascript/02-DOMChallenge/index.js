@@ -50,3 +50,7 @@ document.querySelector("a").classList.toggle("huge");
 // innerHTML can be used to modify the inner html. textContent just modifies the text
 document.querySelector("#firstBye").innerHTML = "<em>Bye 1 modified</em>";
 document.querySelector("#secondBye").textContent = "<em>Bye 2 modified</em>";
+
+// Modifying the attributes og HTML elements
+console.log(document.querySelector("a").getAttribute("href"));
+document.querySelector("a").setAttribute("href", "https://www.bing.com");

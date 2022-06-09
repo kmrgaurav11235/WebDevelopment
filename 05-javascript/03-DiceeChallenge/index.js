@@ -1,4 +1,12 @@
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-var imageSrc1 = "images/dice" + randomNumber1 + ".png";
+function getRandomDiceRoll() {
+  return Math.floor(Math.random() * 6) + 1;
+}
 
-document.querySelector(".img1").setAttribute("src", imageSrc1);
+function getRandomImage() {
+  var randomNumber = getRandomDiceRoll();
+  var imageSrc = "images/dice" + randomNumber + ".png";
+  return imageSrc;
+}
+
+document.querySelector(".img1").setAttribute("src", getRandomImage());
+document.querySelector(".img2").setAttribute("src", getRandomImage());

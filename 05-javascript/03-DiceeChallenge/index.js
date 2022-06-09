@@ -2,11 +2,22 @@ function getRandomDiceRoll() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
-function getRandomImage() {
-  var randomNumber = getRandomDiceRoll();
-  var imageSrc = "images/dice" + randomNumber + ".png";
+function getImage(imageNumber) {
+  var imageSrc = "images/dice" + imageNumber + ".png";
   return imageSrc;
 }
 
-document.querySelector(".img1").setAttribute("src", getRandomImage());
-document.querySelector(".img2").setAttribute("src", getRandomImage());
+var randomNumber1 = getRandomDiceRoll();
+var randomNumber2 = getRandomDiceRoll();
+
+document.querySelector(".img1").setAttribute("src", getImage(randomNumber1));
+document.querySelector(".img2").setAttribute("src", getImage(randomNumber2));
+
+var title = document.querySelector("h1");
+if (randomNumber1 > randomNumber2) {
+  title.textContent = "🚩Player 1 wins!";
+} else if (randomNumber1 < randomNumber2) {
+  title.textContent = "Player 2 wins! 🚩";
+} else {
+  title.textContent = "Draw";
+}

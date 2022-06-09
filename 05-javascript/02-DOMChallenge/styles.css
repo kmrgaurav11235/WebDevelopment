@@ -3,7 +3,8 @@ h1 {
 }
 
 .huge {
-  font-size: 10rem;
+  font-size: 8rem;
+  font-weight: bold;
 }
 
 .small {

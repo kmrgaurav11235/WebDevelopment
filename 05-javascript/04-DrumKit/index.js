@@ -54,6 +54,11 @@ for (var i = 0; i < buttons.length; i++) {
   });
 }
 
+// Listening to Keyboard press
+document.addEventListener("keydown", function (event) {
+  console.log(event);
+});
+
 // Javascript objects and their methods
 function HouseKeeper(name, age, dob, workingFor) {
     this.name = name;

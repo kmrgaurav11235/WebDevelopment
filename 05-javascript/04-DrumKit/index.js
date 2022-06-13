@@ -53,3 +53,18 @@ for (var i = 0; i < buttons.length; i++) {
 
   });
 }
+
+// Javascript objects and their methods
+function HouseKeeper(name, age, dob, workingFor) {
+    this.name = name;
+    this.age = age;
+    this.dob = dob;
+    this.workingFor = workingFor;
+    this.clean = function () {
+        console.log("Cleaning...");
+    }
+}
+
+var houseKeeper1 = new HouseKeeper("Raman", 42, "12-02-1984", 3.7);
+console.log(houseKeeper1.name);
+houseKeeper1.clean();

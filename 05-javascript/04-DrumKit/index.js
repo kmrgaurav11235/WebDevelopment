@@ -40,6 +40,15 @@ function playAudio(key) {
   }
 }
 
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+
+  activeButton.classList.add("pressed");
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 200);
+}
+
 // Detecting button press
 // document.querySelector("button").addEventListener("click", handleClick);
 var buttons = document.querySelectorAll(".drum");
@@ -47,10 +56,12 @@ for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
     var buttonInnerHtml = this.innerHTML;
     playAudio(buttonInnerHtml);
+    buttonAnimation(buttonInnerHtml);
   });
 }
 
 // Detecting Keyboard press
 document.addEventListener("keydown", function(event) {
-  playAudio(event.key)
+  playAudio(event.key);
+  buttonAnimation(event.key);
 });
